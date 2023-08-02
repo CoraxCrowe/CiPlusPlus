@@ -100,7 +100,7 @@ int main() {
       std::cout << "insert your betting amount (100-500 Temucoin): ";
       std::cin >> bet;
 
-      if(bet >= 100 && bet <= 500 && bet < score) {
+      if(bet >= 100 && bet <= 500 && bet <= score) {
         break;
       } else {
         std::cout << "\nInvalid input. Please enter an integer between 100 and 500.\n\n";
