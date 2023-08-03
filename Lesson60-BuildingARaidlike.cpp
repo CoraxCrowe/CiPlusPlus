@@ -122,33 +122,6 @@ float fetchMultiplicatorFromBoard(char currentBoard[3][3]) {
   return multiplicator;
 }
 
-/*char checkWins(char winningSymbols[]) {   // sarebbe carino evitare side effect
-  winningSymbols[0] = checkTris(0, 1, 2);
-  winningSymbols[1] = checkTris(3, 4, 5);
-  winningSymbols[2] = checkTris(6, 7, 8);
-  winningSymbols[3] = checkTris(0, 3, 6);
-  winningSymbols[4] = checkTris(1, 4, 7);
-  winningSymbols[5] = checkTris(2, 5, 8);
-  winningSymbols[6] = checkTris(0, 4, 8);
-  winningSymbols[7] = checkTris(2, 4, 6);
-
-  return winningSymbols[8];
-}*/
-
-/*float calcMult(char winningSymbols[]) {
-
-  float scoreMult = 0;
-
-  for (int i = 0; i < 8; i++) {
-    for (int j = 0; j < 5; j++) {
-      if (winningSymbols[i] == SYMBOLS[j]) {
-        scoreMult += SCORES[j];
-      }
-    }
-  }
-  return scoreMult;
-}*/
-
 int getInputBet(int score) {
     int bet;
     
