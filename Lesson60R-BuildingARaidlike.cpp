@@ -3,7 +3,7 @@
 #include <ctime>
 
 constexpr const char* SYMBOLS = "B@?$7";
-constexpr float SCORES[] = {1.2, 1.5, 2.0, 3, 5};
+constexpr float SCORES[] = {1.25, 1.5, 2.0, 3, 5};
 constexpr const char* WHEEL1 = "BB7?@?BBB7?7@@$";
 constexpr const char* WHEEL2 = "B$?B@@7B?$?$B7B";
 constexpr const char* WHEEL3 = "BBB@@77$7@B@?B$";
@@ -57,9 +57,9 @@ int main() {
 
   
   for (int j = 0; j < 3; j++) {
-    currentBoard[0][j] = WHEEL1[(pos1 + j) % WHEELSIZE];
-    currentBoard[1][j] = WHEEL2[(pos2 + j) % WHEELSIZE];
-    currentBoard[2][j] = WHEEL3[(pos3 + j) % WHEELSIZE];    
+    currentBoard[j][0] = WHEEL1[(pos1 + j) % WHEELSIZE];
+    currentBoard[j][1] = WHEEL2[(pos2 + j) % WHEELSIZE];
+    currentBoard[j][2] = WHEEL3[(pos3 + j) % WHEELSIZE];    
   }    
   
 
